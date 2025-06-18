@@ -1,0 +1,22 @@
+body{
+    background-color: antiquewhite;
+}
+
+.highlight{
+    color: "blue";
+    font-weight:bold;
+}
+
+ul{
+    color: cornflowerblue;
+}
+
+.special{
+    border: 2px solid;
+    background-color: gray;
+}
+
+#fruit1{
+    font-style: italic;
+    background-color: yellow;
+}

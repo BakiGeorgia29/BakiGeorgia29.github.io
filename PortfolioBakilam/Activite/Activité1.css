@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+body{
+    margin:0;
+    background:
+    linear-gradient(#f4f3f8,#4dbdcc),
+    url('cartes-mentales.jpg') 
+    center/cover
+    no-repeat;
+}
+
+.carte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    height:100vh;
+    border:1px solid black;
+    margin: 50px;
+    padding: 25px;
+}
+h1{
+    margin:10px;
+}
+
+button{
+    margin:20px;
+    padding:10px 30px;
+    border:1px solid black;
+    border-radius:20px;
+    background-color:#59d5e4;
+    color:white;
+    font-size:1.2rem;
+    font-weight:500;
+}
+
+.map{
+    font-weight:bold;
+}
