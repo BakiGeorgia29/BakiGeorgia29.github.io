@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceuil</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="name">
+            BAKILAM KEDONKOUO <span class="nom"> TATAH</span>
+        </div>
+        <div class="nav">
+            <a href="#">Accueil</a>
+            <a href="#Propos">A propos</a>
+            <a href="#Projet">Projet</a>
+            <a href="#Compétences">Compétences</a>
+            <a href="#Contact">Contact</a>
+        </div>
+    </header>
+
+    <section class="projet">
+        <div class="present">
+            <p>Je suis TATAH , Développeuse en devenir passionné par le Web et le Design</p>
+            <button class="buttonProjet" onclick="window.location.href='#Projet'">Voir mes projets</button>
+        </div>
+        <div class="imgProj">
+            <img src="./Activite/image1.jpg" alt="Projet">
+        </div>
+    </section>
+
+    <section class="section2">
+        <h2 id="Propos"> A propos</h2>
+        <div class = sect-2>
+            <div class="cv">
+                <p>Je m'appelle <span class="nom">BAKILAM KEDONKOUO TATAH </span>, passionné par la création de sites web modernes et interactifs.</p>
+                <p>Je suis actuellement étudiant(e) en <span class="nom">développement web</span>, et je cherche à améliorer mes compétences en Javascript , HTML et CSS.</p>
+                <p>J'adore transformer mes idées en projets concrets et expérimenter avec les nouvelles technologies.</p>
+                <a href="./Activite/CV_BAKILAM_KEDONKOUO_TATAH.pdf" download="CV_BAKILAM_KEDONKOUO_TATAH.pdf">
+                    <button  id="downloadCV" arial-label="Télécharger mon CV" >Télécharger mon CV</button>
+                </a>
+            </div>
+            <div id="flipper" class="flipper">
+                <div id="flip" class="flip">
+                    <div class="image">
+                        <img src="./Activite/image2.jpg" alt="PhotoProfil">
+                    </div>
+                    <div class="back">
+                        <div class="message">
+                            <p>Travailleuse , je me donne à fond dans tout ce que j'entreprends
+                                Je suis passionnée des films, de la lecture et de la technologie.
+                                Chaque jour , j'apprends des difficultés que je rencontre.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section3">
+        <h2 id="Projet">Mes Projets</h2>
+        <div class="sect-3">
+            <div class="pr">
+                <p>Activite 1: Carte Mentale sur le web et ses principes de base</p>
+                <p>#gitmind</p>
+                <a href="./Activite/Activite1.html">
+                    <button >Voir</button>
+                </a>
+            </div>
+            <div class="pr">
+                <p>Activite 2: Introduction a HTML5</p>
+                <p>#HTML</p>
+                <a href="./Activite2/Activite2.html">
+                    <button>Voir</button>
+                </a>
+
+            </div>
+            <div class="pr">
+                <p>Activite 3: Introduction au feuilles de style CSS</p>
+                <p>#HTML , #CSS</p>
+                <a href="./Activite3/Activite3.html">
+                    <button>Voir</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section4">
+        <h2 id="Compétences">Mes Compétences</h2>
+        <div class="sect-4">
+            <div class="soft">
+                <h3>Soft Skills</h3>
+                <div class="soft1">
+                    <p>Gestion de projet</p>
+                    <p></p>
+                </div>
+                <div class="soft2">
+                    <p>Communication</p>
+                    <p></p>
+                </div>
+                <div class="soft3">
+                    <p>Capacite d'organisation</p>
+                    <p></p>
+                </div>
+                <div class="soft4">
+                    <p>Leadership</p>
+                    <p></p>
+                </div>
+            </div>
+            <div  class="hard">
+                <h3>Hard Skills</h3>
+                <div class="hard1">
+                    <p>VSCode</p>
+                    <p></p>
+                </div>
+                <div class="hard2">
+                    <p>HTML </p>
+                    <p></p>
+                </div>
+                <div class="hard3">
+                    <p>CSS</p>
+                    <p></p>
+                </div>
+                <div class="hard4">
+                    <p>Javascript</p>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section5">
+        <div class="text" id="Contact">
+            <h2>Vous avez un projet en tête ?</h2>
+            <h3>N'hésitez pas à me contacter </h3>
+        </div>
+        <form action="" class="formulaire" id="formulaire">
+            <div class="npr">
+                <div class="prenfor">
+                    <label for="prenom">Votre prénom</label>
+                    <input type="text" name="prenom" id="prenom" class="formin" placeholder="Tatah">
+                </div>
+                <div class="nomfor">
+                    <label for="nom">Votre nom</label>
+                    <input type="text" name="nom" id="nom" class="formin" placeholder="BAKILAM KEDONKOUO">
+                </div>
+            </div>
+
+            <div class="suj">
+                <label for="mail">Votre Adresse mail</label>
+                <input type="email" name="mail" id="mail" class="formin" placeholder="bakilamkedonkouo@gmail.com">
+                <textarea name="texte" id="texte" class="formin" placeholder="Votre Message"></textarea>
+            </div>
+            
+            <button onclick="sendData()">Envoyer</button>
+        </form>
+    </section>
+
+    <footer class="foot">
+            <p>Designed by [<span class="nom">TATAH</span>] with HTML CSS JS</p>
+            <p>Tous droits réservés - 2025</p>
+    </footer>
+</body>
+</html>
